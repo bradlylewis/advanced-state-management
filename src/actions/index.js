@@ -6,7 +6,7 @@ import axios from 'axios';
 //2. Add a standard action that allows us to add new smurf (including the name, nickname, position, summary)
 //3. Add a standard action that allows us to set the value of the error message slice of state.
 
-export const getQuote = () => {
+export const fetchSmurfs = () => {
     return (dispatch => {
         dispatch(fetchStart());
         axios.get('http://localhost:3333/smurfs')
